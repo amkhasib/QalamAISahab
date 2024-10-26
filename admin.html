@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - قلم السحاب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #444;
+            padding: 1rem;
+        }
+        nav a {
+            color: #fff;
+            padding: 0.5rem;
+            text-decoration: none;
+            margin: 0.5rem;
+            text-align: center;
+            flex: 1 1 30%;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .content {
+            padding: 2rem;
+            max-width: 100%;
+            margin: auto;
+        }
+        .admin-panel {
+            background-color: #fff;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .admin-panel h2 {
+            margin-top: 0;
+        }
+        .admin-panel button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>قلم السحاب</h1>
+        <p>لوحة التحكم</p>
+    </header>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="novels.html">الروايات</a>
+        <a href="stories.html">القصص</a>
+        <a href="about.html">حول التطبيق</a>
+        <a href="contact.html">اتصل بنا</a>
+        <a href="admin.html">لوحة التحكم</a>
+    </nav>
+    <div class="content">
+        <div class="admin-panel">
+            <h2>إعدادات لوحة التحكم</h2>
+            <button onclick="addStory()">إضافة قصة جديدة</button>
+            <button onclick="addNovel()">إضافة رواية جديدة</button>
+            <button onclick="editSettings()">تعديل الإعدادات</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 قلم السحاب. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script>
+        function addStory() {
+            alert('أضف هنا وظيفة إضافة قصة جديدة.');
+        }
+        function addNovel() {
+            alert('أضف هنا وظيفة إضافة رواية جديدة.');
+        }
+        function editSettings() {
+            alert('أضف هنا وظيفة تعديل الإعدادات.');
+        }
+        // كلمة المرور
+        const password = "asdfg54321gfdsa";
+        let userPassword = prompt("أدخل كلمة المرور:");
+        if (userPassword !== password) {
+            alert("كلمة المرور خاطئة.");
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
