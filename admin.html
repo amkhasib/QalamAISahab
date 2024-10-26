@@ -96,19 +96,31 @@
     </footer>
     <script>
         function addStory() {
-            alert('أضف هنا وظيفة إضافة قصة جديدة.');
+            // أضف هنا وظيفة إضافة قصة جديدة
+            window.location.href = "stories.html";
         }
         function addNovel() {
-            alert('أضف هنا وظيفة إضافة رواية جديدة.');
+            // أضف هنا وظيفة إضافة رواية جديدة
+            window.location.href = "novels.html";
         }
         function editSettings() {
-            alert('أضف هنا وظيفة تعديل الإعدادات.');
+            // أضف هنا وظيفة تعديل الإعدادات
+            alert('تعديل الإعدادات.');
         }
+
         // كلمة المرور
         const password = "asdfg54321gfdsa";
         let userPassword = prompt("أدخل كلمة المرور:");
+        
         if (userPassword !== password) {
             alert("كلمة المرور خاطئة.");
+
+            // إرسال بريد إلكتروني عند محاولة الدخول الخاطئة
+            var email = "amrkhasib5@gmail.com";
+            var subject = "محاولة دخول غير مسموح بها";
+            var body = وقت المحاولة: ${new Date().toLocaleString()}\nموقع المستخدم: ${window.location.href};
+            window.open(mailto:${email}?subject=${subject}&body=${body});
+            
             window.location.href = "index.html";
         }
     </script>
